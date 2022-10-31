@@ -1,0 +1,250 @@
+:root {
+    --primary-color1: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --selfcare: hsl(43, 84%, 65%);
+    --neutral-color1: hsl(226, 43%, 10%);
+    --neutral-color2: hsl(235, 46%, 20%);
+    --neutral-color3: hsl(235, 45%, 61%);
+    --neutral-color4: hsl(236, 100%, 87%);
+}
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-color1);
+}
+main {
+    width: 820px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+#tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 610px
+}
+.tile {
+    width: 190px;
+    height: 190px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+#profile {
+    width: 190px;
+    height: 400px;
+    margin-right: 20px;
+    background-color: var(--neutral-color2);
+    border-radius: 10px;
+}
+#name {
+    background-color: var(--primary-color1);
+    border-radius: 10px;
+    padding: 20px;
+}
+#name img {
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#name p {
+    font-size: 0.6rem;
+    color: var(--neutral-color4);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 40px;
+}
+#selector {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    font-size: 0.8rem;
+    color: var(--neutral-color3);
+    height: 126px;
+}
+.data {
+    width: 100%;
+    height: 85%;
+    background-color: var(--neutral-color2);
+    border-radius: 8px;
+    padding: 20px;
+}
+#tile1 {
+    background: url(./images/icon-work.svg) no-repeat;
+    background-color: var(--work);
+    background-position: 95% -5%;
+    background-size: 30%;
+}
+#tile2 {
+    background: url(./images/icon-play.svg) no-repeat;
+    background-color: var(--play);
+    background-position: 95% -5%;
+    background-size: 30%;
+}
+#tile3 {
+    background: url(./images/icon-study.svg) no-repeat;
+    background-color: var(--study);
+    background-position: 95% -5%;
+    background-size: 30%;
+}
+#tile4 {
+    background: url(./images/icon-exercise.svg) no-repeat;
+    background-color: var(--exercise);
+    background-position: 95% 0%;
+    background-size: 30%;
+}
+#tile5 {
+    background: url(./images/icon-social.svg) no-repeat;
+    background-color: var(--social);
+    background-position: 95% -10%;
+    background-size: 30%;
+}
+#tile6 {
+    background: url(./images/icon-self-care.svg) no-repeat;
+    background-color: var(--selfcare);
+    background-position: 95% -5%;
+    background-size: 30%;
+}
+h2 {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+}
+.data p {
+    font-size: 0.8rem;
+    color: var(--neutral-color3);
+    margin-top: 10px;
+}
+.active {
+    color: var(--neutral-color4);
+}
+.data:hover {
+    background-color: hsl(238, 39%, 29%);
+    cursor: pointer;
+}
+#selector p:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+@media(max-width: 830px) {
+    body {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    main {
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    #tiles {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .tile {
+        width: 100%;
+        height: 140px;
+    }
+    #profile {
+        width: 100%;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #name {
+        display: flex;
+        align-items: center;
+        height: 140px;
+        justify-content: center;
+    }
+    #name img {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    #name p {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    h1 {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+    #selector {
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+    }
+    .data {
+        width: 100%;
+        height: 80%;
+    }
+    .data p {
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #tile1 {
+        background-size: 15%;
+    }
+    #tile2 {
+        background-size: 15%;
+    }
+    #tile3 {
+        background-size: 15%;
+    }
+    #tile4 {
+        background-size: 15%;
+    }
+    #tile5 {
+        background-size: 15%;
+    }
+    #tile6 {
+        background-size: 15%;
+    }
+}

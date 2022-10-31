@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <main>
+    <div id="profile">
+      <div id="name">
+        <img src="./images/image-jeremy.png" alt="profile">
+        <div>
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div id="selector">
+        <p id="daily">Daily</p>
+        <p class="active" id="weekly">Weekly</p>
+        <p id="monthly">Monthly</p>
+      </div>
+    </div>
+    <div id="tiles">
+      <div id="tile1" class="tile">
+        <div class="data" id="work">
+          <h2>Work<img class="dots" src="./images/icon-ellipsis.svg" alt="dots"></h2>
+          <div class="numbers">
+            <h3 id="current">5hrs</h3>
+            <p id="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div id="tile2" class="tile">
+        <div class="data" id="play">
+          <h2>Play<img class="dots" src="./images/icon-ellipsis.svg" alt="dots"></h2>
+          <div class="numbers">
+            <h3 id="current">5hrs</h3>
+            <p id="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div id="tile3" class="tile">
+        <div class="data" id="study">
+          <h2>Study<img class="dots" src="./images/icon-ellipsis.svg" alt="dots"></h2>
+          <div class="numbers">
+            <h3 id="current">5hrs</h3>
+            <p id="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div id="tile4" class="tile">
+        <div class="data" id="exercise">
+          <h2>Exercise<img class="dots" src="./images/icon-ellipsis.svg" alt="dots"></h2>
+          <div class="numbers">
+            <h3 id="current">5hrs</h3>
+            <p id="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div id="tile5" class="tile">
+        <div class="data" id="social">
+          <h2>Social<img class="dots" src="./images/icon-ellipsis.svg" alt="dots"></h2>
+          <div class="numbers">
+            <h3 id="current">5hrs</h3>
+            <p id="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div id="tile6" class="tile">
+        <div class="data" id="selfCare">
+          <h2>Self Care<img class="dots" src="./images/icon-ellipsis.svg" alt="dots"></h2>
+          <div class="numbers">
+            <h3 id="current">5hrs</h3>
+            <p id="previous">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
